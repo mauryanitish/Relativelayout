@@ -95,27 +95,32 @@
         android:layout_below="@+id/tvSpaceStation"
         android:layout_marginLeft="-25dp"
         />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#80332D"
+        android:layout_marginTop="25dp"
+        android:id="@+id/llOneWay"
+        android:layout_below="@+id/tvCenterLeft"
+
+        >
     <TextView
-        android:layout_width="200dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@color/white"
+        android:paddingEnd="40dp"
         android:id="@+id/tvOneWay"
         android:text="One Way"
-        android:background="#80332D"
-        android:padding="10dp"
-        android:layout_below="@+id/tvCenterLeft"
-        android:layout_marginTop="25dp"
         />
 
-    <Switch
+    <com.google.android.material.switchmaterial.SwitchMaterial
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/switch1"
-        android:layout_alignRight="@+id/tvOneWay"
-        android:layout_alignBottom="@+id/tvOneWay"
         android:layout_marginRight="5dp"
         android:layout_marginBottom="6dp"
         android:gravity="center" />
+    </LinearLayout>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -124,7 +129,7 @@
         android:background="#80332D"
         android:padding="10dp"
         android:textColor="@color/white"
-        android:layout_below="@+id/tvOneWay"
+        android:layout_below="@+id/llOneWay"
         android:layout_marginTop="15dp"
         />
 </RelativeLayout>
